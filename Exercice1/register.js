@@ -46,6 +46,7 @@ subscribeForm.addEventListener("submit", async (event) => {
         errorElement.textContent = "Inscription reussit !";
         errorElement.style.display = "block";
         signInButton.disabled = false;
+        subscribeForm.reset();
     }
 
 //------------ Gestion du formulaire et de sa validité ---------------  
