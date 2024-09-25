@@ -1,0 +1,11 @@
+#error {
+    display: none;
+}
+
+#valid {
+    display: none; 
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: #e6ffe6;
+    margin-bottom: 10px;
+}

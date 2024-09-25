@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="register.js" defer></script>
+</head>
+<body>
+    <div class="container d-flex align-items-center min-vh-100">
+        <div class="row justify-content-center w-100">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title text-center mb-4">Inscription</h1>
+                        <form id="subscribe-form">
+
+                            <div id="error" class="text-danger mt-2">error</div>
+                            <div id="valid" class="text-success mt-2 p-2">valid</div>
+
+                            <div class="form-group">
+                                <label for="email">Adresse email</label>
+                                <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Entrer votre email" >
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Mot de passe</label>
+                                <input type="password" name="password" class="form-control" id="password" placeholder="Entrer votre mot de passe" >
+                            </div>
+                            <div class="form-group">
+                                <label for="passwordConfirm">Confirmation du mot de passe</label>
+                                <input type="password" name="passwordConfirm" class="form-control" id="passwordConfirm" placeholder="Confirmez votre mot de passe" >
+                            </div>
+                            <button type="submit" class="btn btn-primary">Inscription</button>
+                            <div id="spinner" class="spinner-border d-none" role="status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
