@@ -25,15 +25,15 @@ class ThemeSwitcher {
 
         // Méthode pour initialiser le thème en fonction du localStorage
         initTheme() {
-        // Récupérer le thème depuis le localStorage
-        const savedTheme = localStorage.getItem('theme');
-        
-        // Si un thème est stocké, l'appliquer. Sinon, par défaut, c'est le thème sombre.
-        if (savedTheme) {
-            this.setTheme(savedTheme);
-        } else {
-            this.setTheme('dark');
-        }
+            // Récupérer le thème depuis le localStorage
+            const savedTheme = localStorage.getItem('theme');
+            
+            // Si un thème est stocké, l'appliquer. Sinon, par défaut, c'est le thème sombre.
+            if (savedTheme) {
+                this.setTheme(savedTheme);
+            } else {
+                this.setTheme('dark');
+            }
         }
     }
 
